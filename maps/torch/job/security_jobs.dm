@@ -45,8 +45,8 @@
 
 /datum/job/detective
 	title = "Forensic Technician"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Chief of Security"
 	economic_power = 5
 	minimal_player_age = 7
@@ -114,11 +114,14 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/army/e3,
 		/datum/mil_rank/army/e4,
 		/datum/mil_rank/army/e4_alt,
+		/datum/mil_rank/army/e5,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/sol/agent
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,

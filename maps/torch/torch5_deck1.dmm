@@ -5866,7 +5866,12 @@
 /area/medical/equipstorage)
 "amZ" = (
 /obj/structure/table/rack,
-/obj/item/storage/briefcase/crimekit,
+/obj/item/storage/briefcase/crimekit{
+	pixel_y = 7
+	},
+/obj/item/storage/briefcase/crimekit{
+	pixel_y = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
 "ana" = (
@@ -21733,14 +21738,24 @@
 /area/medical/sleeper)
 "lJb" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/spray/luminol,
-/obj/item/reagent_containers/spray/sterilizine,
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/item/storage/box/swabs{
+	pixel_y = 8
+	},
+/obj/item/storage/box/swabs{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/spray/luminol{
+	pixel_x = -9
+	},
+/obj/item/reagent_containers/spray/sterilizine{
+	pixel_x = 3
+	},
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "lJj" = (
@@ -22330,8 +22345,6 @@
 /area/security/questioning)
 "mCe" = (
 /obj/structure/table/glass,
-/obj/item/storage/box/fingerprints,
-/obj/item/storage/box/swabs,
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "mCi" = (
@@ -23368,12 +23381,6 @@
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 10
-	},
-/obj/machinery/button/blast_door{
-	dir = 1;
-	id_tag = "d1ladderwindow";
-	name = "Ladderwell Shutter Control";
-	pixel_y = -25
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
@@ -25804,7 +25811,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
 "qSx" = (
-/obj/structure/closet,
 /obj/item/clothing/suit/storage/toggle/labcoat,
 /obj/item/storage/box/evidence,
 /obj/item/storage/box/syringes,
@@ -25813,6 +25819,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/structure/closet/secure_closet/forensics,
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "qSD" = (
@@ -26058,9 +26065,6 @@
 "riC" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor/westright{
-	name = "Brig Chief Desk"
-	},
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bo_windows"
 	},
@@ -50316,7 +50320,7 @@ agK
 leb
 xSf
 ayp
-axe
+ure
 hrb
 jHp
 hQd
